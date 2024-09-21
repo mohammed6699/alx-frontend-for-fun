@@ -1,0 +1,29 @@
+body{
+    padding: 0;
+    margin: 0;
+    
+}
+h2{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 500;
+}
+a{
+    color: rgb(150, 6, 6);
+    text-decoration: none;
+}
+a::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(150, 6, 6);
+    width: 0;
+    text-decoration: none;
+    height: 2px;
+    transform: translateY(2.2ex);
+    transition: .5s ease-in-out;
+    transform-origin: left;
+}
+a:hover::before{
+    width: 210px;
+}

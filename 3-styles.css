@@ -1,0 +1,81 @@
+:root {
+    --is-red: red; /* Define the variable */
+}
+
+body {
+    background-color: rgb(143, 143, 143);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 100%;
+    background-color: rgba(231, 229, 228, 0.849);
+}
+
+.menu-open {
+    display: none;
+}
+
+.menu-open-button {
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #584e4e;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menu-item {
+    display: none;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: #e99c9c;
+    margin: 5px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu-line {
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin: 5px auto;
+}
+
+.menu-open-button:hover {
+    transition: 0.5s ease-out;
+    transform: scale(1.2); /* Use transform to scale */
+}
+
+.menu-open-button:hover .menu-line-1 {
+    transition: .3s ease-out;
+}
+
+.menu-open:checked ~ .menu-item {
+    display: flex; /* Display the menu items when checked */
+}
+
+.menu-open:checked ~ .menu-open-button > .menu-line-3 {
+    display: none;
+}
+
+.menu-open:checked ~ .menu-open-button:hover > .menu-line-2 {
+    transform: rotate(-45deg);
+    margin-top: -1.5px;
+    transition: .1s ease-out;
+}
+
+.menu-open:checked ~ .menu-item:hover {
+    background-color: white;
+    color: var(--is-red);
+    border: 0.5px solid var(--is-red);
+}
