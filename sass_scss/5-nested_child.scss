@@ -1,0 +1,9 @@
+$body-color: #3D3D3D;
+$text-color: #FF0000;
+
+body{
+    color: $text-color;
+    >.red:first-child{
+        color: $text-color;
+    }
+}

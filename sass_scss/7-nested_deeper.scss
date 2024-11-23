@@ -1,0 +1,13 @@
+$body-size: 14px;
+$h1-bigger: 16px;
+$h1-smaller: 12px;
+
+body{
+    font-size: $body-size;
+    h1{
+        font-size: $h1-bigger;
+        .smaller{
+            font-size: $h1-smaller;
+        }
+    }
+}

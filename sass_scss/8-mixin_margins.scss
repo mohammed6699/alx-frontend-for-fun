@@ -1,0 +1,11 @@
+$body-margin: 10px;
+$div-margin: 15px;
+
+body{
+    margin-left: $body-margin;
+    margin-right: $body-margin;
+}
+div{
+    margin-left: $div-margin;
+    margin-right: $div-margin;
+}

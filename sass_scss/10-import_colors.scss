@@ -1,0 +1,12 @@
+@import '9-extend_list';
+$color-blue: #0000FF;
+
+.red{
+    color: $text-color-2;
+}
+.green{
+    color: $text-color-1;
+}
+.blue{
+    color: $color-blue;
+}

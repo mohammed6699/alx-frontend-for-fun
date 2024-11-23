@@ -1,0 +1,10 @@
+$font-size: 20px;
+$font-small: 14px;
+$screen-width: 320px;
+
+h1{
+    font-size: $font-size;
+    @media (min-width: #{$screen-width}) {
+        font-size: $font-small;
+}
+}
